@@ -31,7 +31,7 @@
 	<!-- Offcanvas Menu Section -->
 	<div class="offcanvas-menu-wrapper">
 		<div class="menu-header">
-			<a href="./index.html" class="site-logo">
+			<a href="{{asset('index')}}" class="site-logo">
 				<img src="img/logo.png" alt="">
 			</a>
 			<div class="menu-switch" id="menu-canvas-close">
@@ -41,9 +41,9 @@
 		<ul class="main-menu">
 			<li><a href="{{asset('index')}}" class="active">Home</a></li>
 			<li><a href="{{asset('gallery')}}">Gallery</a></li>
-			<li><a href="blog.html">Blog</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li><a href="{{asset('blog')}}">Blog</a></li>
+			<li><a href="{{asset('about')}}">About</a></li>
+			<li><a href="{{asset('contact')}}">Contact</a></li>
 		</ul>
 		<div class="menu-footer">
 			<div class="footer-social">
@@ -60,7 +60,7 @@
 
 	<!-- Header section -->
 	<header class="header-section">
-		<a href="./index.html" class="site-logo">
+		<a href="{{asset('index')}}" class="site-logo">
 			<img src="img/logo.png" alt="">
 		</a>
 		<div class="menu-switch" id="menu-canvas-show">

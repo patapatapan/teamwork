@@ -1,15 +1,15 @@
 {
     "This is a secure area of the application. Please confirm your password before continuing.": "此為應用程序的無須驗證的頁面。若須往下繼續操作煩請先驗證您的密碼。",
     "Password": "您的密碼",
-    "Confirm": "請再確認一下",
+    "Confirm": "確認",
     "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.": "忘記密碼了嗎？無須擔憂，現在只需告訴我們您的電子郵件，我們將通過電子郵件向您發送一個能協助您重置密碼的連結，您可以通過該連結設置一個新的密碼。",
     "Email": "電子郵件",
     "Email Password Reset Link": "按下此按鈕將發送重置密碼的連結",
     "Remember me": "此按鈕能協助您下次快速登入",
     "Forgot your password?": "忘記您的密碼了嗎?",
     "Log in": "登入",
-    "Username": "帳號",
-    "Name": "使用者姓名",
+    "Username": "帳號(使用者名稱)",
+    "Name": "你的姓名",
     "Confirm Password": "確認密碼",
     "I agree to the :terms_of_service and :privacy_policy": "我同意本服務條款和隱私政策",
     "Terms of Service": "服務條款",
@@ -39,5 +39,13 @@
     "Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.": "Laravel News 是一個社區驅動的門戶和時事通訊，聚合了 Laravel 生態系統中所有最新和最重要的新聞，包括新的包發布和教程",
     "Laravel's robust library of first-party tools and libraries, such as": "Laravel 強大的第一方工具庫和庫，例如",
     "help you take your projects to the next level. Pair them with powerful open source libraries like": "幫助您將項目提升到一個新的水平。將它們與強大的開源庫配對，例如",
-    "": ""
+    "New Password": "新的密碼",
+    "Current Password": "當前密碼",
+    "Profile Information": "個人檔案資訊",
+    "Photo": "相片",
+    "Save": "儲存",
+    "Delete Account": "刪除帳戶",
+    "Two Factor Authentication": "二階段驗證",
+    "You have not enabled two factor authentication.": "您尚未啟用二階段認證"
+
   }

@@ -37,11 +37,11 @@
 			</div>
 		</div>
 		<ul class="main-menu">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="blog.html">Blog</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html" class="active">Contact</a></li>
+			<li><a href="{{asset('index')}}">Home</a></li>
+			<li><a href="{{asset('gallery')}}">Gallery</a></li>
+			<li><a href="{{asset('blog')}}">Blog</a></li>
+			<li><a href="{{asset('about')}}">About</a></li>
+			<li><a href="{{asset('contact')}}" class="active">Contact</a></li>
 		</ul>
 		<div class="menu-footer">
 			<div class="footer-social">
