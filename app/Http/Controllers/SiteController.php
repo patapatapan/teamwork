@@ -107,4 +107,29 @@ class SiteController extends Controller
         //
         return view('site.about');
     }
+    // 註冊會員
+    public function sign()
+    {
+        return view('site.sign');
+    }
+    // 登入會員
+    public function login()
+    {
+        return view('site.login');
+    }
+    // 會員頁面
+    public function member()
+    {
+        return view('site.member');
+    }
+    // 變更密碼
+    public function password()
+    {
+        return view('site.password');
+    }
+    // 修改會員資料
+    public function modify()
+    {
+        return view('site.modify');
+    }
 }

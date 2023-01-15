@@ -39,5 +39,9 @@ Route::namespace ('App\Http\Controllers')->group(function () {
     Route::get('blog/{blog}', 'SiteController@blog_single');
     Route::get('contact', 'SiteController@contact');
     Route::get('about', 'SiteController@about');
-
+    Route::get('sign', 'SiteController@sign'); //註冊會員
+    Route::get('login', 'SiteController@login'); //登入會員
+    Route::get('member', 'SiteController@member'); //會員頁面
+    Route::get('password', 'SiteController@password'); //變更密碼
+    Route::get('modify', 'SiteController@modify'); // 修改會員資料
 });

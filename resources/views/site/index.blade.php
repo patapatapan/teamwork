@@ -39,20 +39,17 @@
 			</div>
 		</div>
 		<ul class="main-menu">
-			<li><a href="{{asset('index')}}" class="active">Home</a></li>
-			<li><a href="{{asset('gallery')}}">Gallery</a></li>
-			<li><a href="{{asset('blog')}}">Blog</a></li>
-			<li><a href="{{asset('about')}}">About</a></li>
-			<li><a href="{{asset('contact')}}">Contact</a></li>
+			<li><a href="{{asset('index')}}" class="active">首頁</a></li>
+			<li><a href="{{asset('gallery')}}">文章</a></li>
+			<li><a href="{{asset('blog')}}">購物車</a></li>
+			<li><a href="{{asset('login')}}">登入</a></li>
+      <li><a href="{{asset('contact')}}">聯絡我們</a></li>
 		</ul>
 		<div class="menu-footer">
 			<div class="footer-social">
-				<a href="#">Facebook</a>
-				<a href="#">Twitter</a>
-				<a href="#">Instagram</a>
 			</div>
 			<div class="copyright"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
 		</div>
 	</div>
@@ -106,12 +103,9 @@
 	<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="footer-social">
-			<a href="#">Facebook</a>
-			<a href="#">Twitter</a>
-			<a href="#">Instagram</a>
 		</div>
 		<div class="copyright"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
 	</footer>
 	<!-- Footer section end -->

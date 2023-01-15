@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Cassi | Photo Studio HTML Template</title>
+	<title>登入會員</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Cassi Photo Studio HTML Template">
 	<meta name="keywords" content="photo, html">
@@ -29,25 +29,22 @@
 	<!-- Offcanvas Menu Section -->
 	<div class="offcanvas-menu-wrapper">
 		<div class="menu-header">
-			<a href="./index.html" class="site-logo">
-				<img src="img/logo.png" alt="">
+			<a href="./index" class="site-logo">
+				<img src="img/logo.png" alt=""><span class="text-white font-weight-bold">兔給樂</span>
 			</a>
 			<div class="menu-switch" id="menu-canvas-close">
 				<i class="icon_close"></i>
 			</div>
 		</div>
 		<ul class="main-menu">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="blog.html">Blog</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html" class="active">Contact</a></li>
+			<li><a href="{{asset('index')}}" class="active">首頁</a></li>
+			<li><a href="{{asset('gallery')}}">文章</a></li>
+			<li><a href="{{asset('blog')}}">購物車</a></li>
+			<li><a href="{{asset('contact')}}">登入</a></li>
+      <li><a href="{{asset('contact')}}">聯絡我們</a></li>
 		</ul>
 		<div class="menu-footer">
 			<div class="footer-social">
-				<a href="#">Facebook</a>
-				<a href="#">Twitter</a>
-				<a href="#">Instagram</a>
 			</div>
 			<div class="copyright"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
@@ -55,11 +52,11 @@
 		</div>
 	</div>
 	<!-- Offcanvas Menu Section end -->
-	
+
 	<!-- Header section -->
 	<header class="header-section">
-		<a href="./index.html" class="site-logo">
-			<img src="img/logo.png" alt="">
+		<a href="./index" class="site-logo">
+			<img src="img/logo.png" alt=""><span class="text-white font-weight-bold">兔給樂</span>
 		</a>
 		<div class="menu-switch" id="menu-canvas-show">
 			<i class="icon_menu"></i>
@@ -69,30 +66,25 @@
 
 	<!-- Contact section -->
 	<section class="contact-section">
-		<div class="contact-warp set-bg" data-setbg="img/blog/big.jpg">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						<div class="contact-info">
-							<h4>Information</h4>
-							<div class="ci-item"><i class="icon_phone"></i>(12)-100-100-100</div>
-							<div class="ci-item"><i class="icon_mail"></i>Info.colorlib@gmail.com</div>
-						</div>
-						<div class="contact-info">
-							<h4>Address</h4>
-							<div class="ci-item"><i class="icon_pin"></i>Iris Watson, Mary land, United State, New York City</div>
-						</div>
-					</div>
-					<div class="col-lg-7">
-						<form class="contact-form">
-							<label for="y-name">Your Name:</label>
-							<input type="text" id="y-name">
-							<label for="y-email">Email Address:</label>
-							<input type="text" id="y-email">
-							<label for="y-msg">Leave A Message:</label>
-							<textarea id="y-msg"></textarea>
-							<button class="site-btn">Send Us Now</button>
-						</form>
+		<div class="contact-warp set-bg" data-setbg="img/blog/bg.jpg">
+			<div class="container m-auto">
+        <h4 class="text-white mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+</svg> 登入會員</h4>
+<div class="row"><div class="col-6"><form class="contact-form">
+							<label for="account" >帳號</label>
+							<input class="form-control" type="text" id="account" placeholder="輸入帳號" required>
+							<label for="password">密碼</label>
+              <div class="input-group mb-5">
+  <input class="form-control" type="password" id="password" placeholder="輸入密碼" requiredrequired>
+  <button class="btn btn-outline-light" type="button" id="button-addon2"><i class="fa fa-eye" onclick="showhide()" id="eye"></i></button>
+</div>
+
+              <div class="row"><div class="col"><button class="w-100 btn btn-primary">登入</button></div><div class="col"><a href="./sign" class="w-100 btn btn-secondary">註冊會員</a></div></div>
+
+						</form></div>
+          <div class="col-6"></div></div>
+
 					</div>
 				</div>
 			</div>
@@ -103,12 +95,9 @@
 	<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="footer-social">
-			<a href="#">Facebook</a>
-			<a href="#">Twitter</a>
-			<a href="#">Instagram</a>
 		</div>
 		<div class="copyright"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
 	</footer>
 	<!-- Footer section end -->
@@ -119,6 +108,26 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/main.js"></script>
+<script type="text/javascript">
 
+var a=document.getElementById("eye");
+
+var b=document.getElementById("password");
+
+
+
+function showhide(){
+       if(b.type=="password"){
+             b.type='text';
+           a.className='fa fa-eye-slash'
+       }else{
+           b.type='password';
+
+           a.className='fa fa-eye'
+       }
+}
+
+</script>
 	</body>
 </html>
+
