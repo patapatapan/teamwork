@@ -31,7 +31,7 @@
 	<!-- Offcanvas Menu Section -->
 	<div class="offcanvas-menu-wrapper">
 		<div class="menu-header">
-			<a href="./index.html" class="site-logo">
+			<a href="./index" class="site-logo">
 				<img src="img/logo.png" alt="">
 			</a>
 			<div class="menu-switch" id="menu-canvas-close">
@@ -60,7 +60,7 @@
 
 	<!-- Header section -->
 	<header class="header-section">
-		<a href="./index.html" class="site-logo">
+		<a href="./index" class="site-logo">
 			<img src="img/logo.png" alt="">
 		</a>
 		<div class="menu-switch" id="menu-canvas-show">

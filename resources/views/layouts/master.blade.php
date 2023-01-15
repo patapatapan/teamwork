@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Cassi | Photo Studio HTML Template</title>
+	<title>@yield('title')</title> {{--挖洞(title)--}}
 	<meta charset="UTF-8">
 	<meta name="description" content="Cassi Photo Studio HTML Template">
 	<meta name="keywords" content="photo, html">
@@ -38,7 +38,7 @@
 				<i class="icon_close"></i>
 			</div>
 		</div>
-        {{ menu('frontend' ,'menu.my_menu') }}
+        {{ menu('frontend' ,'menu.my_menu') }} {{--使用側邊欄管理頁面跳轉按鈕--}}
 		{{--<ul class="main-menu">
 			<li><a href="{{asset('index')}}" class="active">Home</a></li>
 			<li><a href="{{asset('gallery')}}">Gallery</a></li>
@@ -69,7 +69,7 @@
 		</div>
 	</header>
 	<!-- Header section end -->
-    @yield('content')
+    @yield('content')    {{--挖洞(content)--}}
 
 	<!-- Footer section -->
 	<footer class="footer-section">

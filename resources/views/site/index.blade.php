@@ -1,10 +1,12 @@
-@extends('layouts.master')
+@extends('layouts.master')   {{--填洞(content)--}}
+
+@section('title', '首頁')   {{--填洞(title)--}}
 
 {{--@php
 	echo url()->current()
 @endphp--}}
 
-@section('content')
+@section('content')   {{--填洞(content)--}}
 	<!-- Hero section -->
 	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
