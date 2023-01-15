@@ -243,35 +243,41 @@ ol {
     opacity: 0;
     filter: alpha(opacity=0);
 }
-.main-menu li:nth-child(5) {
+.main-menu li:nth-child(6) {
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
-.main-menu li:nth-child(4) {
+.main-menu li:nth-child(5) {
     -webkit-transition: all 0.5s ease 0.2s;
     -moz-transition: all 0.5s ease 0.2s;
     -o-transition: all 0.5s ease 0.2s;
     transition: all 0.5s ease 0.2s;
 }
-.main-menu li:nth-child(3) {
+.main-menu li:nth-child(4) {
     -webkit-transition: all 0.5s ease 0.4s;
     -moz-transition: all 0.5s ease 0.4s;
     -o-transition: all 0.5s ease 0.4s;
     transition: all 0.5s ease 0.4s;
 }
-.main-menu li:nth-child(2) {
+.main-menu li:nth-child(3) {
     -webkit-transition: all 0.5s ease 0.6s;
     -moz-transition: all 0.5s ease 0.6s;
     -o-transition: all 0.5s ease 0.6s;
     transition: all 0.5s ease 0.6s;
 }
-.main-menu li:nth-child(1) {
+.main-menu li:nth-child(2) {
     -webkit-transition: all 0.5s ease 0.8s;
     -moz-transition: all 0.5s ease 0.8s;
     -o-transition: all 0.5s ease 0.8s;
     transition: all 0.5s ease 0.8s;
+}
+.main-menu li:nth-child(1) {
+    -webkit-transition: all 0.5s ease 1.0s;
+    -moz-transition: all 0.5s ease 1.0s;
+    -o-transition: all 0.5s ease 1.0s;
+    transition: all 0.5s ease 1.0s;
 }
 .main-menu li:last-child {
     margin-bottom: 0;
@@ -347,6 +353,12 @@ ol {
     -moz-transition: all 0.5s ease 0.8s;
     -o-transition: all 0.5s ease 0.8s;
     transition: all 0.5s ease 0.8s;
+}
+.active .main-menu li:nth-child(6) {
+    -webkit-transition: all 0.5s ease 1.0s;
+    -moz-transition: all 0.5s ease 1.0s;
+    -o-transition: all 0.5s ease 1.0s;
+    transition: all 0.5s ease 1.0s;
 }
 /*---------------------
    Header section

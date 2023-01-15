@@ -22,6 +22,7 @@
 	<![endif]-->
 
 </head>
+@yield('style')
 <body>
 	<!-- Page Preloder -->
 	<div id="preloder">
@@ -32,7 +33,7 @@
 	<div class="offcanvas-menu-wrapper">
 		<div class="menu-header">
 			<a href="{{asset('index')}}" class="site-logo">
-				<img src="img/logo.png" alt="">
+				<img src="img/logo.png" alt="">@yield('header')
 			</a>
 			<div class="menu-switch" id="menu-canvas-close">
 				<i class="icon_close"></i>
@@ -62,7 +63,7 @@
 	<!-- Header section -->
 	<header class="header-section">
 		<a href="{{asset('index')}}" class="site-logo">
-			<img src="img/logo.png" alt="">
+			<img src="img/logo.png" alt="">@yield('header2')
 		</a>
 		<div class="menu-switch" id="menu-canvas-show">
 			<i class="icon_menu"></i>
@@ -90,6 +91,6 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/main.js"></script>
-
+	@yield('script')
 	</body>
 </html>
