@@ -104,21 +104,21 @@
 <script type="text/javascript">
 
 	var a=document.getElementById("eye");
-	
+
 	var b=document.getElementById("password");
-	
-	
-	
+
+
+
 	function showhide(){
 		   if(b.type=="password"){
 				 b.type='text';
 			   a.className='fa fa-eye-slash'
 		   }else{
 			   b.type='password';
-	
+
 			   a.className='fa fa-eye'
 		   }
 	}
-	
+
 	</script>
 @endsection
