@@ -48,3 +48,7 @@ Route::namespace ('App\Http\Controllers')->group(function () {
     Route::get('password', 'SiteController@password'); //變更密碼
     Route::get('modify', 'SiteController@modify'); // 修改會員資料
 });
+
+Route::get('/feedback', function () {
+    return view('feedback');
+});
