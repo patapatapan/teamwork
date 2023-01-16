@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
+use App\Models\Cgy;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -93,10 +95,12 @@ class SiteController extends Controller
         //
         return view('site.blog');
     }
-    public function blog_single()
+    //
+    public function blog_single($id)
     {
-        //
-        return view('site.blog_single');
+        $sit = Article::find($id); //取得某筆資料
+        $cgy = Cgy::find($sit->cgy_id); //資料的Cgy_id
+        return view('site.blog_single', compact('sit', 'cgy'));
     }
     public function about()
     {

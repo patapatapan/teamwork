@@ -21,11 +21,11 @@ class DatabaseSeeder extends Seeder
         $this->setFKCheckOff();
         $this->call([
             //MySettingSeeder::class,
-           // CgySeeder::class,
-           // TagSeeder::class,
+            // CgySeeder::class,
+            // TagSeeder::class,
             //UserSeeder::class,
             //ArticleSeeder::class,
-           // CommentSeeder::class,
+            // CommentSeeder::class,
             //ElementSeeder::class,
             //PortfolioSeeder::class,
             //ContactSeeder::class,
