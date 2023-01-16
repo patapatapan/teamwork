@@ -82,6 +82,7 @@ class SiteController extends Controller
     {
         //
     }
+    //---------Site
     public function gallery()
     {
         //
@@ -96,6 +97,11 @@ class SiteController extends Controller
     {
         //
         return view('site.blog_single');
+    }
+    public function about()
+    {
+        //
+        return view('site.about');
     }
     public function contact()
     {
