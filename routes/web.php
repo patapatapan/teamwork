@@ -39,5 +39,6 @@ Route::namespace ('App\Http\Controllers')->group(function () {
     Route::get('blog/{blog}', 'SiteController@blog_single');
     Route::get('contact', 'SiteController@contact');
     Route::get('about', 'SiteController@about');
+    Route::get('/newproducts', 'SiteController@about');
 
 });
