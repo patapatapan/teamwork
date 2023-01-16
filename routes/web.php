@@ -50,3 +50,7 @@ Route::namespace ('App\Http\Controllers')->group(function () {
     Route::get('about', 'SiteController@about');
     Route::get('/newproducts', 'SiteController@about');
 });
+
+Route::get('/feedback', function () {
+    return view('feedback');
+});
