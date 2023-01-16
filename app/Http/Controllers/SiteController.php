@@ -102,10 +102,11 @@ class SiteController extends Controller
         //
         return view('site.contact');
     }
-    public function about()
+    //
+    public function articles()
     {
         //
-        return view('site.about');
+        return view('site.articles');
     }
     // 註冊會員
     public function sign()

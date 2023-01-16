@@ -18,37 +18,41 @@
         <h4 class="text-white mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
   <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
 </svg> 註冊會員 <a href="./login"  class=" btn btn-sm btn-outline-secondary ml-2">已有會員？</a></h4>
-<form class="contact-form"><div class="row"><div class="col-6">
-  <div class="mb-3">
-							<label for="account">註冊手機</label>
-							<input class="form-control" type="text" id="account" placeholder="輸入信箱">
-  </div><div class="mb-3">
-  <label for="password">再次輸入密碼</label>
-
-  <input class="form-control" type="password" id="password" placeholder="輸入密碼">             </div>
+<form class="contact-form">
+  <div class="row"><div class="col-6">
+    <div class="mb-3">
+      <label for="name">姓名</label>
+      <input class="form-control" type="text" id="name" placeholder="輸入姓名" required>
+    </div>
+    <div class="mb-3">
+      <label for="username">使用者名稱</label>
+      <input class="form-control" type="text" id="username" placeholder="輸入使用者名稱" required>
+    </div>
+    <div class="mb-3">
+			<label for="mobile">註冊手機</label>
+			<input class="form-control" type="text" id="mobile" placeholder="輸入電話號碼" required>
+    </div>
   </div>
   <div class="col-6">
     <div class="mb-3">
-							<label for="password">密碼</label>
-
-  <input class="form-control" type="password" id="password" placeholder="輸入密碼">
-              </div>
-  <div class="mb-3">
-  <label for="password">姓名</label>
-  <input class="form-control" type="password" id="password" placeholder="輸入姓名">
+			<label for="password">密碼</label>
+      <input class="form-control" type="password" id="password" placeholder="輸入密碼" required>
+    </div>
+    <div class="mb-3">
+      <label for="password_2nd">再次輸入密碼</label>
+      <input class="form-control" type="password" id="password_2nd" placeholder="輸入密碼" required>
+    </div>
+    <div class="mb-3">
+      <label for="email">電子郵件</label>
+      <input class="form-control" type="password" id="email" placeholder="輸入電子郵件" required>
+    </div>
   </div>
-
-  <div class="mb-3">
-  <label for="password">地址</label>
-  <input class="form-control" type="password" id="password" placeholder="輸入姓名">
   </div>
-
-
-</div>
-</div><div class="row"><div class="col-6"></div><div class="col-6 text-right"><a class=" btn btn-primary" href="./member" >確定註冊</a></div>
-						</form></div>
+  <div class="row">
+    <div class="col-6"></div>
+    <div class="col-6 text-right"><a class=" btn btn-primary" href="./member" >確定註冊</a></div>
+</form></div>
           </div>
-
 					</div>
 				</div>
 			</div>
