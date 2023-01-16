@@ -72,6 +72,7 @@
     <section class="blog-single-section">
 		<div class="blog-single-header set-bg" data-setbg="img/blog/big.jpg">
 			<div class="container">
+        {{-- 資料匯入 --}}
 				<div class="fb-cata">{{$cgy->title}}</div>
 				<h2>{{$sit->title}}</h2>
 				<div class="bs-metas">

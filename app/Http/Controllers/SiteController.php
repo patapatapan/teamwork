@@ -97,9 +97,8 @@ class SiteController extends Controller
     //
     public function blog_single($id)
     {
-        $sit = Article::find($id);
-
-        $cgy = Cgy::find($sit->cgy_id);
+        $sit = Article::find($id); //取得某筆資料
+        $cgy = Cgy::find($sit->cgy_id); //資料的Cgy_id
         return view('site.blog_single', compact('sit', 'cgy'));
     }
     public function contact()
