@@ -7,13 +7,13 @@
 	<meta name="keywords" content="photo, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/elegant-icons.css"/>
-	<link rel="stylesheet" href="css/fresco.css"/>
+	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
+	<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}"/>
+	<link rel="stylesheet" href="{{ asset('css/elegant-icons.css') }}"/>
+	<link rel="stylesheet" href="{{ asset('css/fresco.css') }}"/>
 
 	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
 
 
 	<!--[if lt IE 9]>
@@ -39,11 +39,11 @@
 			</div>
 		</div>
 		<ul class="main-menu">
-			<li><a href="{{asset('index')}}">Home</a></li>
+			<li><a href="{{asset('index')}}">首頁</a></li>
 			<li><a href="{{asset('gallery')}}">Gallery</a></li>
 			<li><a href="{{asset('blog')}}" class="active">Blog</a></li>
 			<li><a href="{{asset('about')}}">About</a></li>
-			<li><a href="{{asset('contact')}}">Contact</a></li>
+			<li><a href="{{asset('contact')}}">聯絡表單</a></li>
 		</ul>
 		<div class="menu-footer">
 			<div class="footer-social">
@@ -69,11 +69,12 @@
 	</header>
 	<!-- Header section end -->
 
-	<section class="blog-single-section">
+    <section class="blog-single-section">
 		<div class="blog-single-header set-bg" data-setbg="img/blog/big.jpg">
 			<div class="container">
-				<div class="fb-cata">Nature</div>
-				<h2>The Function Of The Logo</h2>
+        {{-- 資料匯入 --}}
+				<div class="fb-cata">{{$cgy->title}}</div>
+				<h2>{{$sit->title}}</h2>
 				<div class="bs-metas">
 					<div class="bs-meta">By Colorlib</div>
 					<div class="bs-meta">February 21, 2019</div>
@@ -84,13 +85,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 m-auto blog-content">
-					<p>Never ever think of giving up. Winners never quit and quitters never win. Take all negative words out of your mental dictionary and focus on the solutions with utmost conviction and patience. The battle is never lost until you’ve abandon your vision.</p>
-					<p>But what if you’re really exhausted physically, mentally, and most of all emotionally? Here are some sources of motivation to prompt you in reaching the peak of accomplishment.</p>
-					<p>How would you feel after accomplishing your mission? Of course you will feel ecstatic. You might be shedding tears of joy. Let this tremendous feeling sink in and encourage you to persist despite all odds.</p>
-					<p>When I was studying for the Board Exams, I used this technique to motivate me. I would envision the sweetness of folks calling me a CPA. It would command respect. People will look up to me as a higher level of authority. And I would have better chances of finding a good job. I absorbed all these great perceptions into my inner being in order to achieve my ultimate goal.</p>
-					<p></p>
-					<p>How would you feel if you’ve entered a contest, but there are no prizes for the winners? It’s not very encouraging, isn’t it?</p>
-					<p>The same principles apply to your vision. Reward yourself after accomplishing a goal. Set a particular incentive for every objective.</p>
+					<p>{{$sit->content_small}}</p>
 					<div class="row blog-gellery">
 						<div class="col-md-6">
 							<a class="fresco" href="img/blog/bg-1.jpg" data-fresco-group="blog-gallery">
@@ -115,9 +110,7 @@
 							</div>
 						</div>
 					</div>
-					<p>The holidays bring with them thoughts of carving and serving delicious turkey dinners to your family and friends. Tradition has its fans, but perhaps this year you’d like to try a twist to your turkey recipe. If you have a gas grill and enjoy the smoky flavor of grilled meats, why not try grilling your turkey this year? It’s not only possible, it is rather simple. And it delivers a delicious flavored bird to your table. Plus, having the turkey on the grill instead of the oven leaves you with all the room you need to prepare the rest of your dinner in less time.</p>
-					<p>When you are ready to buy your turkey, the first thing to consider is the size of your grill. You don’t want a bird that is so enormous that it can’t fit on the grill rack. Ideally, the turkey you select should sit on the grill and the lid should close without touching the bird. If this isn’t possible, don’t worry, you can still grill your turkey. You’ll need some heavy duty aluminum foil and either a V shaped grill stand or another metal cooking instrument that you can safely use to prop open the lid of the grill.</p>
-					<p>Prepare and stuff the turkey as you normally would. Place it on the grill so that it is positioned over one burner that you can turn off. Turn that burner off and the other burner or burners on. Since you can’t really “flip” a turkey, you want the turkey to cook by indirect heat, not by a direct flame underneath it.</p>
+					<p>{{$sit->content}}</p>
 					<div class="row pt-5">
 						<div class="col-lg-6 mb-4">
 							<div class="post-cata">Mountain</div>
@@ -137,6 +130,8 @@
 				</div>
 			</div>
 		</div>
+
+
 		<div class="row pt-5 m-0">
 			<div class="col-md-6 taxt-left text-md-right p-0">
 				<div class="blog-item recent-blog set-bg" data-setbg="img/blog/recent-post-1.jpg">
@@ -195,12 +190,12 @@
 	<!-- Footer section end -->
 
 	<!--====== Javascripts & Jquery ======-->
-	<script src="js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/fresco.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="{{asset('js/vendor/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('js/owl.carousel.min.js')}}"></script>
+	<script src="{{asset('js/masonry.pkgd.min.js')}}"></script>
+	<script src="{{asset('js/fresco.min.js')}}"></script>
+	<script src="{{asset('js/main.js')}}"></script>
 
 	</body>
 </html>
