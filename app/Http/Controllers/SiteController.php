@@ -102,7 +102,7 @@ class SiteController extends Controller
         $cgy = Cgy::find($sit->cgy_id); //資料的Cgy_id
         return view('site.blog_single', compact('sit', 'cgy'));
     }
-    public function about()
+    public function shop()
     {
         //
         return view('site.about');

@@ -313,7 +313,7 @@
 
                             <span class="info">{{ $articles[$i]->title }}</span>
 
-                            <a href="{{ asset('blog/' . $articles[$i]->id) }}" id="sitebtn"class="sitebtn">想看更多<i
+                            <a href="{{ asset('blog_single/' . $articles[$i]->id) }}" id="sitebtn"class="sitebtn">想看更多<i
                                     class="arrow_right"></i></a>
 
                         </div>

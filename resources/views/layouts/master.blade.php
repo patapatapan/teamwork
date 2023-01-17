@@ -7,13 +7,13 @@
 	<meta name="keywords" content="photo, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/elegant-icons.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
+	<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}"/>
+	<link rel="stylesheet" href="{{ asset('css/elegant-icons.css') }}"/>
+	<link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}"/>
 
 	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
 
 
 	<!--[if lt IE 9]>
@@ -60,7 +60,7 @@
 	<!-- Header section -->
 	<header class="header-section">
 		<a href="{{asset('index')}}" class="site-logo">
-			<img src="img/logo.png" alt="">@yield('header2')
+			<img src="{{ asset('img/logo.png') }}" alt="">@yield('header2')
 		</a>
 		<div class="menu-switch" id="menu-canvas-show">
 			<i class="icon_menu"></i>
@@ -80,11 +80,11 @@
 	<!-- Footer section end -->
 
 	<!--====== Javascripts & Jquery ======-->
-	<script src="js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="{{ asset('js/vendor/jquery-3.2.1.min.js') }}"></script>
+	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+	<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+	<script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
+	<script src="{{ asset('js/main.js') }}"></script>
 	@yield('script')
 	</body>
 </html>
