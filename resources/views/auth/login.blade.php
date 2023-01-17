@@ -110,6 +110,12 @@
                 <x-jet-button class="input-box" >
                     {{ __('Log in') }}
                 </x-jet-button>
+                <a class="input-box" href="{{ asset('/register') }} "
+                style="
+                  text-decoration
+                " >
+                    {{ __('Register') }}
+                </a>
             </div>
         </form>
     </div>

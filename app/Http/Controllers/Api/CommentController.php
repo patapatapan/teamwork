@@ -13,7 +13,7 @@ class CommentController extends Controller
     {
         //comment新增訊息
         //
-        Comment::create($request->only(['name', 'email', 'phone', 'comment']));
+        Comment::create($request->only(['name', 'email', 'phone', 'comment', 'article_id']));
 
         return redirect()->back();
     }

@@ -20,6 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/sendmail', 'App\Http\Controllers\Api\MailController@sendMail');
 
-Route::post('comment', 'App\Http\Controllers\Api\CommentController@store');
+Route::post('/comment/{id}', 'App\Http\Controllers\Api\CommentController@store');
 
 Route::post('/contact', 'App\Http\Controllers\Api\ContactController@store');
