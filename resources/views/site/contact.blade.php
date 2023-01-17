@@ -18,13 +18,13 @@
 						</div>
 					</div>
 					<div class="col-lg-7">
-						<form class="contact-form">
-							<label for="guest_name">姓名:</label>
-							<input type="text" id="guest_name">
+						<form class="contact-form" action="{{ asset('api/contact') }}" method="post">
+							<label for="name">姓名:</label>
+							<input type="text" id="name" name="name">
 							<label for="email">電子信箱:</label>
-							<input type="text" id="email">
+							<input type="text" id="email" name="email">
 							<label for="message">留言:</label>
-							<textarea id="message"></textarea>
+							<textarea id="message" name="message"></textarea>
 							<button class="site-btn">送出</button>
 						</form>
 					</div>
@@ -35,3 +35,12 @@
 
 @endsection
 
+@section('script')
+<script>
+    var msg = '{{Session::get('alert')}}';
+    var exist = '{{Session::has('alert')}}';
+    if(exist){
+      alert(msg);
+    }
+  </script>
+@endsection
