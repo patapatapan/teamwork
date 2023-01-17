@@ -12,4 +12,16 @@ class Article extends Model
     {
         return $this->belongsTo(Cgy::class);
     }
+
+    public function getFirstPic()
+    {
+        // json_decode 將 Json 格式的字串轉換成陣列
+        $pics = json_decode($this->pics, true);
+        if (is_array($pics) && count($pics) > 0) {
+            return $pics[0];
+        } else {
+            return null;
+        }
+    }
+
 }
