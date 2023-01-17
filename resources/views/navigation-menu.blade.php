@@ -13,7 +13,10 @@
                         <img src="{{asset('img/logo.png')}}">
                     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+  {{ menu('frontend' ,'menu.my_menu_user') }}
+
+      {{-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page"  href="{{ route('dashboard') }}">首頁</a>
         </li>
@@ -27,7 +30,7 @@
           <a class="nav-link"  href="../contact">聯絡我們</a>
         </li>
       </ul>
-    </div>
+    </div> --}}
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">

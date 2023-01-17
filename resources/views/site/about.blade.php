@@ -8,12 +8,12 @@
     <meta name="keywords" content="photo, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/elegant-icons.css" />
+    <link rel="stylesheet" href={{ asset('css/bootstrap.min.css') }} />
+    <link rel="stylesheet" href={{ asset('css/font-awesome.min.css') }} />
+    <link rel="stylesheet" href={{ asset('css/elegant-icons.css') }} />
 
     <!-- Main Stylesheets -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href={{ asset('css/style.css') }} />
 
 
     <!--[if lt IE 9]>
@@ -139,7 +139,7 @@
                             (asynpchomead = window.asynpchomead || []).push({})
                         </script>
                         <script defer="defer" src="/index/v1/frontend/static/js/main.84e15b18.js"></script>
-                        <link href="/index/v1/frontend/static/css/main.00f214a6.css" rel="stylesheet">
+                        <link href="{{ asset('/index/v1/frontend/static/css/main.00f214a6.css')}}" rel="stylesheet">
                         <script>
                             try {
                                 var strQueryString, arrMatchHref, strCookie = document.cookie || "",
@@ -6999,11 +6999,11 @@
                 <!-- Footer section end -->
 
                 <!--====== Javascripts & Jquery ======-->
-                <script src="js/vendor/jquery-3.2.1.min.js"></script>
-                <script src="js/bootstrap.min.js"></script>
-                <script src="js/owl.carousel.min.js"></script>
-                <script src="js/masonry.pkgd.min.js"></script>
-                <script src="js/main.js"></script>
+                <script src="{{ asset('js/vendor/jquery-3.2.1.min.js') }}"></script>
+                <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+                <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+                <script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
+                <script src="{{ asset('js/main.js') }}"></script>
 
 </body>
 

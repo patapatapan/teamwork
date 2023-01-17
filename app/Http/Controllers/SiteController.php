@@ -27,6 +27,7 @@ class SiteController extends Controller
     public function create()
     {
         //
+
     }
 
     /**
@@ -38,6 +39,7 @@ class SiteController extends Controller
     public function store(Request $request)
     {
         //
+
     }
 
     /**

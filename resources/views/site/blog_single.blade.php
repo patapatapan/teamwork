@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="blog-single-section">
-		<div class="blog-single-header set-bg" data-setbg="img/blog/big.jpg">
+		<div class="blog-single-header set-bg" data-setbg="{{ asset('storage/'.$sit->pic) }}">
 			<div class="container">
         {{-- 資料匯入 --}}
 				<div class="fb-cata">{{$cgy->title}}</div>
@@ -82,30 +82,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-10 m-auto blog-content">
-					<h4 class="comment-title">Leave A Comment</h4>
-					<form class="comment-form">
-						<div class="row">
-							<div class="col-lg-4">
-								<input type="text" placeholder="Name">
-							</div>
-							<div class="col-lg-4">
-								<input type="text" placeholder="E-mail">
-							</div>
-							<div class="col-lg-4">
-								<input type="text" placeholder="Phone">
-							</div>
-							<div class="col-lg-12">
-								<textarea placeholder="Comment"></textarea>
-								<button class="site-btn">Post Comment</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
+    @include('comment.comment')
 	</section>
 @endsection
 

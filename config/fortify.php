@@ -143,5 +143,11 @@ return [
             // 'window' => 0,
         ]),
     ],
+    //----------------
+
+    'redirects' => [
+        'login' => '/index',
+        'logout' => '/index',
+    ],
 
 ];

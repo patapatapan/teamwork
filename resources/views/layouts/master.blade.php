@@ -33,7 +33,7 @@
 	<div class="offcanvas-menu-wrapper">
 		<div class="menu-header">
 			<a href="{{asset('index')}}" class="site-logo">
-				<img src="img/logo.png" alt="">@yield('header')
+				<img src="{{asset('img/logo.png')}}" alt="">@yield('header')
 			</a>
 			<div class="menu-switch" id="menu-canvas-close">
 				<i class="icon_close"></i>
