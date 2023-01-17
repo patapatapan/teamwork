@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/sendmail', 'App\Http\Controllers\Api\MailController@sendMail');
+Route::post('/contact', 'App\Http\Controllers\Api\ContactController@store');
