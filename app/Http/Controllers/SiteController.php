@@ -100,7 +100,14 @@ class SiteController extends Controller
     {
         $sit = Article::find($id); //取得某筆資料
         $cgy = Cgy::find($sit->cgy_id); //資料的Cgy_id
-        return view('site.blog_single', compact('sit', 'cgy'));
+
+        $rand_sit = Article::find(rand(1, 100)); //隨機取得資料
+        $rand_cgy = Cgy::find($rand_sit->cgy_id);
+
+        $rand_sit2 = Article::find(rand(1, 100)); //隨機取得資料
+        $rand_cgy2 = Cgy::find($rand_sit2->cgy_id);
+
+        return view('site.blog_single', compact('sit', 'cgy', 'rand_sit', 'rand_cgy', 'rand_sit2', 'rand_cgy2'));
     }
     public function shop()
     {
