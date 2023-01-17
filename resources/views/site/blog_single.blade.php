@@ -7,13 +7,18 @@
 	<meta name="keywords" content="photo, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
+	{{-- <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
 	<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}"/>
 	<link rel="stylesheet" href="{{ asset('css/elegant-icons.css') }}"/>
-	<link rel="stylesheet" href="{{ asset('css/fresco.css') }}"/>
+	<link rel="stylesheet" href="{{ asset('css/fresco.css') }}"/> --}}
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/elegant-icons.css"/>
+	<link rel="stylesheet" href="css/fresco.css"/>
 
 	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+	<link rel="stylesheet" href="css/style.css"/>
 
 
 	<!--[if lt IE 9]>
@@ -77,7 +82,7 @@
 				<h2>{{$sit->title}}</h2>
 				<div class="bs-metas">
 					<div class="bs-meta">By Colorlib</div>
-					<div class="bs-meta">February 21, 2019</div>
+					<div class="bs-meta">{{$sit->created_at->locale('zh_TW')}}</div>
 					<div class="bs-meta">No Comments</div>
 				</div>
 			</div>
@@ -89,22 +94,22 @@
 					<div class="row blog-gellery">
 						<div class="col-md-6">
 							<a class="fresco" href="img/blog/bg-1.jpg" data-fresco-group="blog-gallery">
-								<img src="img/blog/bg-1.jpg" alt="">
+								<img src="{{Voyager::image($sit->getFirstPic())}}" alt="">
 							</a>
 						</div>
 						<div class="col-md-6">
 							<a class="fresco" href="img/blog/bg-2.jpg" data-fresco-group="blog-gallery">
-								<img src="img/blog/bg-2.jpg" alt="">
+								<img src="{{Voyager::image($sit->getFirstPic())}}" alt="">
 							</a>
 							<div class="row">
 								<div class="col-sm-6">
 									<a class="fresco" href="img/blog/bg-3.jpg" data-fresco-group="blog-gallery">
-										<img src="img/blog/bg-3.jpg" alt="">
+										<img src="{{Voyager::image($sit->getFirstPic())}}" alt="">
 									</a>
 								</div>
 								<div class="col-sm-6">
-									<a class="fresco" href="img/blog/bg-4.jpg" data-fresco-group="blog-gallery">
-										<img src="img/blog/bg-4.jpg" alt="">
+									<a class="fresco" href="#" data-fresco-group="blog-gallery">
+										<img src="{{Voyager::image($sit->getFirstPic())}}" alt="">
 									</a>
 								</div>
 							</div>
@@ -118,7 +123,7 @@
 						</div>
 						<div class="col-lg-6 mb-5 text-left text-md-right">
 							<div class="post-share">
-								<span>Share:</span>
+								<span>分享:</span>
 								<a href="#"><i class="fa fa-facebook"></i></a>
 								<a href="#"><i class="fa fa-twitter"></i></a>
 								<a href="#"><i class="fa fa-google-plus"></i></a>
@@ -134,18 +139,18 @@
 
 		<div class="row pt-5 m-0">
 			<div class="col-md-6 taxt-left text-md-right p-0">
-				<div class="blog-item recent-blog set-bg" data-setbg="img/blog/recent-post-1.jpg">
+				<div class="blog-item recent-blog set-bg" data-setbg="{{Voyager::image($rand_sit->getFirstPic())}}">
 					<div class="blog-text ml-auto">
-						<div class="bi-cata">City</div>
-						<h6><a href="blog-single.html">What are the odds of someone doing extraordinary things if that person lost their sight.</a></h6>
+						<div class="bi-cata">{{$rand_cgy->title}}</div>
+						<h6><a href="{{url('blog_single/'.$rand_sit->id)}}">{{$rand_sit->content_small}}</a></h6>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-6 p-0">
-				<div class="blog-item recent-blog set-bg" data-setbg="img/blog/recent-post-2.jpg">
+				<div class="blog-item recent-blog set-bg" data-setbg="{{Voyager::image($rand_sit2->getFirstPic())}}">
 					<div class="blog-text">
-						<div class="bi-cata">Nature</div>
-						<h6><a href="blog-single.html">What are the odds of someone doing extraordinary things if that person lost their sight.</a></h6>
+						<div class="bi-cata">{{$rand_cgy2->title}}</div>
+						<h6><a href="{{url('blog_single/'.$rand_sit2->id)}}">{{$rand_sit2->content_small}}</a></h6>
 					</div>
 				</div>
 			</div>
