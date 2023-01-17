@@ -190,12 +190,12 @@
 	<!-- Footer section end -->
 
 	<!--====== Javascripts & Jquery ======-->
-	<script src="js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/fresco.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="{{asset('js/vendor/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('js/owl.carousel.min.js')}}"></script>
+	<script src="{{asset('js/masonry.pkgd.min.js')}}"></script>
+	<script src="{{asset('js/fresco.min.js')}}"></script>
+	<script src="{{asset('js/main.js')}}"></script>
 
 	</body>
 </html>

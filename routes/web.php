@@ -35,7 +35,7 @@ Route::group(['prefix' => 'admin'], function () {
 Route::namespace ('App\Http\Controllers')->group(function () {
     Route::get('index', 'SiteController@index'); //首頁
     Route::get('gallery', 'SiteController@gallery');
-    Route::get('blog', 'SiteController@blog');
+    Route::get('blog', 'BlogController@blog'); //修改controller
     Route::get('blog_single/{id}', 'SiteController@blog_single');
     Route::get('contact', 'SiteController@contact'); //聯絡表單
     Route::get('articles', 'SiteController@articles'); //文章集
